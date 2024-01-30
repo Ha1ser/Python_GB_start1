@@ -14,15 +14,29 @@
 # На выходе:
 # 3
 
-coins = [0, 0, 0, 1, 1, 0]
+coins = [0, 1, 0, 1, 1, 0]
 
-flips = 0
+# flips = 0
 
-heads_count = coins.count(1)
+# heads_count = coins.count(1)
 
-if heads_count > len(coins) / 2:
-    flips = len(coins) - heads_count
+# if heads_count > len(coins) / 2:
+#     flips = len(coins) - heads_count
+# else:
+#     flips = heads_count
+
+# print(flips)
+
+
+# или 
+n0 = 0 
+n1 = 0
+for i in coins:
+    if i == 0:
+        n0 += 1
+    else:
+        n1 += 1
+if n0 > n1:
+    print(n1)
 else:
-    flips = heads_count
-
-print(flips)
+    print(n0)
