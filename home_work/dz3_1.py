@@ -12,3 +12,12 @@ for i in range(len(list_1)):
         count += 1
 print(count)
 
+# или 
+list_1 = [4, 1, 2, 3, 4, 5, 4, 4, 4]
+k = 4
+count = 0
+for i in list_1:
+    if k == i:
+        count += 1
+print(count)
+
